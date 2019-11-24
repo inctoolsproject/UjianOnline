@@ -120,13 +120,7 @@ class Auth extends CI_Controller {
 						$this->message('Ooppsss!','No.Pendaftaran sudah terdaftar, silahkan coba No.Pendaftaran lain','error');
 						redirect('auth/registrasiExam');
 					}
-				// }
-			// } else {
-			// 	if ($this->master->getStudentByNis($data['student_nis'])) {
-			// 		$this->message('Ooppsss!','No.Pendaftaran sudah terdaftar, silahkan coba No.Pendaftaran lain','error');
-			// 		redirect('auth/registrasiExam');
-			// 	}
-			} // VALIDATION NIS AVAILABLE //
+			} 
 
 
 			if ($_FILES['student_photo']['name']) {
@@ -157,16 +151,6 @@ class Auth extends CI_Controller {
 				$this->auth->regisStudent($data);
 				$this->message('Selamat!','Data siswa berhasil ditambahkan','success');
 				$this->load->view('auth/loginExam');
-		// 	}
-		// } elseif($id_student) {
-		// 	$data = [
-		// 		'id_student' => $id_student,
-		// 		'student_hide' => 1
-		// 	];
-		// 	$this->master->updateStudent($data);
-		// 	$this->message('Selamat!','Data siswa berhasil diubah','success');
-		// }
-		// redirect('auth/loginExam');
 }
 }
 }

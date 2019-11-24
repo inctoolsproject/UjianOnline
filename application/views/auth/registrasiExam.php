@@ -113,6 +113,10 @@
                             <button class="btn btn-primary btn-lg btn-block">Submit</button>
                         </div>
                     </div>
+
+                    <p>
+            Kembali ke <a href="<?php echo base_url('Auth/exam') ?>">Login</a>.
+          </p>
                     </form>
                     
                 </div>
